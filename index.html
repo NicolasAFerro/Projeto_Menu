@@ -4,8 +4,177 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projeto Menu</title>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="jquery.mask.min.js"></script>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div>"Hello world"</div>
+    <div id="bigContainer">
+      <div id="cabecalho">
+        <img src="assets/home.jpg" alt="" />
+      </div>
+      <h1>Menu - Faça A Sua Escolha</h1>
+
+      <div class="container">
+        <h2>Prato Principal</h2>
+
+        <h3>Todos os pratos acompanham arroz, feijão e sobremesa do dia</h3>
+        <div class="cards">
+          <div class="card" id="cardBife">
+            <img src="assets\bife.jpg" alt="" name="imagemComida" />
+            <h2 class="nomePrato">Bife com batata</h2>
+            <p>R$ 30,00</p>
+            <div class="quantity buttons_added">
+              <input type="button" value="-" class="minus" />
+              <input
+                type="number"
+                step="1"
+                min="0"
+                max=""
+                id="1"
+                name="quantity"
+                value="0"
+                title="Qty"
+                class="input-text qty text"
+                size="4"
+                pattern=""
+                inputmode=""
+              />
+              <input type="button" value="+" class="plus" />
+            </div>
+          </div>
+          <div class="card" id="cardBife">
+            <img src="assets\coxa.jpg" alt="" name="imagemComida" />
+            <h2 class="nomePrato">Coxa de Frango Crocante</h2>
+            <p>R$ 25,00</p>
+            <div class="quantity buttons_added">
+              <input type="button" value="-" class="minus" />
+              <input
+                type="number"
+                step="1"
+                min="0"
+                max=""
+                id="1"
+                name="quantity"
+                value="0"
+                title="Qty"
+                class="input-text qty text"
+                size="4"
+                pattern=""
+                inputmode=""
+              />
+              <input type="button" value="+" class="plus" />
+            </div>
+          </div>
+          <div class="card" id="cardBife">
+            <img src="assets\panela.jpg" alt="" name="imagemComida" />
+            <h2 class="nomePrato">Carne de Panela</h2>
+            <p>R$ 30,00</p>
+            <div class="quantity buttons_added">
+              <input type="button" value="-" class="minus" />
+              <input
+                type="number"
+                step="1"
+                min="0"
+                max=""
+                id="1"
+                name="quantity"
+                value="0"
+                title="Qty"
+                class="input-text qty text"
+                size="4"
+                pattern=""
+                inputmode=""
+              />
+              <input type="button" value="+" class="plus" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <h2>Acompanhamentos</h2>
+        <h3>Porções para uma pessoa</h3>
+        <div class="cards">
+          <div class="card" id="cardBife">
+            <img src="assets\farofa.jpg" alt="" name="imagemComida" />
+            <h2 class="nomePrato">Farofa</h2>
+            <p>R$ 10,00</p>
+            <div class="quantity buttons_added">
+              <input type="button" value="-" class="minus" />
+              <input
+                type="number"
+                step="1"
+                min="0"
+                max=""
+                id="1"
+                name="quantity"
+                value="0"
+                title="Qty"
+                class="input-text qty text"
+                size="4"
+                pattern=""
+                inputmode=""
+              />
+              <input type="button" value="+" class="plus" />
+            </div>
+          </div>
+          <div class="card" id="cardBife">
+            <img src="assets\salad.jpg" alt="" name="imagemComida" />
+            <h2 class="nomePrato">salada</h2>
+            <p>R$ 8,00</p>
+            <div class="quantity buttons_added">
+              <input type="button" value="-" class="minus" />
+              <input
+                type="number"
+                step="1"
+                min="0"
+                max=""
+                id="1"
+                name="quantity"
+                value="0"
+                title="Qty"
+                class="input-text qty text"
+                size="4"
+                pattern=""
+                inputmode=""
+              />
+              <input type="button" value="+" class="plus" />
+            </div>
+          </div>
+          <div class="card" id="cardBife">
+            <img src="assets\torresmo.jpg" alt="" name="imagemComida" />
+            <h2 class="nomePrato">Torresmo</h2>
+            <p>R$ 12,00</p>
+            <div class="quantity buttons_added">
+              <input type="button" value="-" class="minus" />
+              <input
+                type="number"
+                step="1"
+                min="0"
+                max=""
+                id="1"
+                name="quantity"
+                value="0"
+                title="Qty"
+                class="input-text qty text"
+                size="4"
+                pattern=""
+                inputmode=""
+              />
+              <input type="button" value="+" class="plus" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <h2>Dados Pessoais</h2>
+        <input type="text" id="nome" placeholder="Digite o seu nome" />
+        <input type="text" id="telefone" placeholder="Digite o seu telefone" />
+        <input type="text" id="email" placeholder="Digite o seu email" />
+      </div>
+      <button id="btnCalcular">Calcular</button>
+      <div id="resultado"></div>
+      <script src="javascript.js"></script>
+    </div>
   </body>
 </html>
