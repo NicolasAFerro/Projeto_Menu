@@ -36,7 +36,7 @@ function calc() {
       stringSaida += `<li>Prato: ${produto} - `;
       stringSaida += `Preço unitário=${formatter.format(precoUn)} - `;
       stringSaida += `Quantidade ${arrayCardsSum[i].value} - `;
-      stringSaida += `Total: ${total}</li>`;
+      stringSaida += `Total: ${formatter.format(total)}</li>`;
       totalCompra += total;
     }
   }
